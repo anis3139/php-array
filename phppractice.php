@@ -137,15 +137,57 @@
 
 
 
+//Empty string
+
+// $name='55';
+
+// if(isset($name)){
+//  echo "Name is set";
+// }else{
+//     echo "Name is not set";
+// }
+
+// echo "\n";
+// if(empty($name)){
+//     echo "name is set and its emplty";
+// }else{
+//     echo "Name is not empty";
+// }
+
+// echo "\n";
+
+// if(isset($name) && (is_numeric($name) || $name!='')){
+//     echo "Name is set and not empty";
+// }else{
+//     echo "Name is either not set or its empty";
+// }
 
 
 
+//extract and slice
+
+// $fruits=['mango','banana','orange','jackfruits','pulm','apple'];
+
+// $fruitsData=array_slice($fruits,2,2); //true
+// print_r($fruitsData);
+
+// echo "\n";
+
+// $random=["a"=>10,"b"=>12,"c"=>14,10=>15,"d"=>16,"e"=>18,"f"=>20];
+
+// $randomData=array_slice($random, 2,-1);
+// print_r($randomData);
+// echo "\n";
+// $randomData=array_slice($random, 2,-1, true);
+// print_r($randomData);
 
 
+//array splice (modify main array)
+$fruits=['mango','banana','orange','jackfruits','pulm','apple'];
 
-
-
-
-
-
+$newfruits=array("dates","pineapple");
+$fruitsData=array_splice($fruits,2,-1,$newfruits);
+print_r($fruitsData);
+print_r($fruits);
+echo "\n";
 
