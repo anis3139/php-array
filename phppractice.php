@@ -310,46 +310,116 @@
 //array walk, map, filter
 
 
-$someNumber=[1,2,3,4,5,6,7,8,9,10,11,12];
+// $someNumber=[1,2,3,4,5,6,7,8,9,10,11,12];
 
-function squire($n){
-    printf("This number %s multiple is %s", $n, $n*$n);
-    echo "\n";
-}
+// function squire($n){
+//     printf("This number %s multiple is %s", $n, $n*$n);
+//     echo "\n";
+// }
 
-array_walk($someNumber,'squire');
-
-
-
-function cube($n){
-    return $n*$n*$n;
-}
-
-$cubeNumber=array_map('cube',$someNumber);
-
-print_r($cubeNumber);
-
-function even($n){
-    return $n%2==0;
-}
-
-function odd($n){
-    return $n%2==1;
-}
-
-$evenNumber=array_filter($someNumber,'even');
-$oddNumber=array_filter($someNumber,'odd');
-
-print_r($evenNumber);
-print_r($oddNumber);
+// array_walk($someNumber,'squire');
 
 
-$name=['jalal','kamal','arif','jamal','jashim','jubayer'];
 
-function nameFilter($nm){
-    return $nm[0]=='j';
-}
+// function cube($n){
+//     return $n*$n*$n;
+// }
 
-$filterbyj=array_filter($name,'nameFilter');
+// $cubeNumber=array_map('cube',$someNumber);
 
-print_r($filterbyj);
+// print_r($cubeNumber);
+
+// function even($n){
+//     return $n%2==0;
+// }
+
+// function odd($n){
+//     return $n%2==1;
+// }
+
+// $evenNumber=array_filter($someNumber,'even');
+// $oddNumber=array_filter($someNumber,'odd');
+
+// print_r($evenNumber);
+// print_r($oddNumber);
+
+
+// $name=['jalal','kamal','arif','jamal','jashim','jubayer'];
+
+// function nameFilter($nm){
+//     return $nm[0]=='j';
+// }
+
+// $filterbyj=array_filter($name,'nameFilter');
+
+// print_r($filterbyj);
+
+
+
+
+
+
+
+
+//array utility function or array reduce
+
+// $number=[1,2,3,4,5,6,7,8,9];
+
+// function sum($oldvalue, $newvalue){
+//     if($newvalue%2==0){
+//        return $oldvalue+$newvalue;
+//     }
+//     return $oldvalue;
+// }
+
+// $total=array_reduce($number,'sum');
+// echo $total;
+
+
+
+
+
+//pass data to varriable in array
+
+// $color=[20, 30, 40];
+// list($red,$green,$blue,)=$color;
+
+// echo $green;
+
+
+
+
+
+// Range in array
+
+// $number=range(20,30);
+// print_r($number);
+
+
+
+
+// foreach(range(0,50,3) as $number){
+//     if($number>0){
+//         echo $number."\n";
+//     }
+ 
+// }
+
+
+
+
+//random number and shuffle
+
+
+// $number=range(20,40);
+// $random=mt_rand(0,20);
+// echo $random;
+
+
+// shuffle($number);
+// print_r($number);
+// $randomNumber=$number[3];
+// echo $randomNumber;
+
+
+
